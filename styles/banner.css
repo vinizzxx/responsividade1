@@ -1,35 +1,27 @@
-.banner {
-    background: var(--azul-degrade);
-    color: var(--branco);
-    text-align: center;
-    padding: 2.5em 2em;
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
 }
 
-.banner__titulo {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.banner__texto {
-    font-weight: 500;
-    margin: 1em 0;
-}
-
-.banner__pesquisa {
-    background-color: transparent;
-    border: 1px solid var(--branco);
-    color: var(--branco);
-    border-radius: 24px;
-    padding: 1em;
-    width: 100%;
-}
-
-.banner__pesquisa::placeholder {
+body {
+    background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
-    text-align: center;
-    color: var(--branco);
-    background: url("../img/Lupa.svg") no-repeat;
-    background-position: 1em;
 }
